@@ -11,7 +11,9 @@ module.exports = {
       gridTemplateColumns:{
         header: "1fr 2fr",
       },
-    
+      backgroundImage:{
+        heroBg: "url(/src/images/hero-bg.webp)"
+      }
     },
   },
   darkMode: 'class',

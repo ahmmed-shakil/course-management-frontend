@@ -1,13 +1,14 @@
 import React from "react";
 import { Layout } from "../../../shared/Layout/Layout";
 import ButtonPrimary from "../../../Buttons/ButtonPrimary";
+import AnalogClock from "./components/AnalogClock";
 
 const HeroSection = () => {
   return (
-    <div className=" flex items-center py-44" style={{ minHeight: "80vh" }}>
+    <div className=" flex items-center py-36" style={{ minHeight: "80vh" }}>
       <Layout>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 justify-between items-center">
-          <div>
+          <div className=" space-y-6">
             <h2 className="text-4xl text-primary font-bold">
               LET'S GROW WITH CODEMASTER
             </h2>
@@ -21,6 +22,9 @@ const HeroSection = () => {
               coding and start your adventure today!
             </p>
             <ButtonPrimary text={"Explore Courses"} />
+          </div>
+          <div className=" flex justify-end">
+            <AnalogClock />
           </div>
         </div>
       </Layout>
