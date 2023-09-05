@@ -13,7 +13,7 @@ const AnalogClock = () => {
       <div className="group relative flex cursor-pointer items-center justify-center text-sm">
 
         <div
-          className={`w-80 h-80 shadow-lg relative flex items-center justify-center rounded-full bg-heroBg`}
+          className={`w-80 h-80 shadow-lg relative flex items-center justify-center rounded-full bg-heroBg border-solid border-2 border-primary`}
         >
           {clockNumbers.map((num) => (
             <label
