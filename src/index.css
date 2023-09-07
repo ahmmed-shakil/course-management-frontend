@@ -5,7 +5,11 @@
 
 
 :root{
-  --primary: #00CF5D;
+  --primary: #6E1FEA;
+  --secondary: #141414;
+  --third: #FEF6F7;
+  --last: #FFFDF7;
+  /* --primary: #00CF5D; */
 }
 
 

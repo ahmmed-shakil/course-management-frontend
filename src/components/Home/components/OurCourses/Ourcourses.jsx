@@ -3,8 +3,11 @@ import { Layout } from "../../../shared/Layout/Layout";
 import Line from "../../../shared/Line";
 import Courseimg from "../../../../images/hero-bg.webp";
 import Badge from "../../../shared/Badge/Badge";
+import ButtonPrimary from "../../../Buttons/ButtonPrimary";
+import { useNavigate } from "react-router-dom";
 
 const Ourcourses = () => {
+  const navigate = useNavigate();
   return (
     <div className="pt-14 pb-28">
       <Layout>
@@ -35,12 +38,18 @@ const Ourcourses = () => {
               </p>
               <div className=" flex justify-between items-center">
                 <h6 className=" text-primary font-semibold">Price: Free</h6>
-                <button className=" border-solid border-2 border-primary hover:bg-primary hover:text-gray-200 transition-colors duration-150 delay-100 ease-in-out rounded-md px-3 py-2">
+                {/* <button className=" border-solid border-2 border-primary hover:bg-primary hover:text-gray-200 transition-colors duration-150 delay-100 ease-in-out rounded-md px-3 py-2">
                   Start Course
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
+        </div>
+        <div className=" mt-20 flex justify-center">
+          <ButtonPrimary
+            onClick={() => navigate("/our-courses")}
+            text={"View All Courses"}
+          />
         </div>
       </Layout>
     </div>
