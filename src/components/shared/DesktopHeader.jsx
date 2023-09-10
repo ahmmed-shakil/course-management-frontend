@@ -21,7 +21,7 @@ const DesktopHeader = () => {
               </h2>
             </NavLink>
           </div>
-          <div className="flex items-center justify-end space-x-10">
+          <div className="flex items-center justify-end space-x-4">
             {pages
               ?.filter((page) => page.show)
               .map((page) => {

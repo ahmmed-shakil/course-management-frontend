@@ -1,6 +1,8 @@
 import React from "react";
 import { Layout } from "../../../shared/Layout/Layout";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import PhoneInputComponent from "../../../shared/Input/PhoneInputComponent";
+import DateSelect from "../DateSelect/DateSelect";
+import TimeSelect from "../../../TimeSelect/TimeSelect";
 
 const Contact = () => {
   return (
@@ -10,7 +12,7 @@ const Contact = () => {
           <div className=" mx-0 lg:mx-3 grid grid-cols-1 md:grid-cols-2 justify-between items-center">
             <div>
               <div className=" flex items-center justify-center">
-                <div className=" w-full space-y-5 lg:w-3/4 bg-slate-100 text-primary p-3 rounded-md shadow-lg">
+                <div className=" w-full space-y-5 lg:w-3/4 bg-slate-100 dark:bg-slate-800 text-primary p-3 rounded-md shadow-lg">
                   <h4
                     className=" text-xl font-semibold
                 "
@@ -32,26 +34,13 @@ const Contact = () => {
                       className=" h-14 px-3 text-lg w-full border-solid border-2  rounded-md"
                     />
                   </div>
+
                   <div>
-                    <input
-                      type="tel"
-                      placeholder="Your phone number"
-                      className=" h-14 px-3 text-lg w-full border-solid border-2  rounded-md"
-                    />
+                    <PhoneInputComponent />
                   </div>
-                  <div>
-                    <div className=" h-14 px-3 text-lg w-full border-solid border-2 text-gray-800 dark:text-gray-200 border-gray-200 bg-slate-50 flex items-center justify-between cursor-pointer opacity-75">
-                      <p>Select date</p>
-                      <ChevronDownIcon className=" h-4 w-4" />
-                    </div>
-                  </div>
-                  <div>
-                    <div className=" h-14 px-3 text-lg w-full border-solid border-2 text-gray-800 dark:text-gray-200 border-gray-200 bg-slate-50 flex items-center justify-between cursor-pointer opacity-75">
-                      <p>Select time</p>
-                      <ChevronDownIcon className=" h-4 w-4" />
-                    </div>
-                  </div>
-                  <button className=" bg-primary px-3 text-gray-200 w-full rounded-md py-2 rounded-m border-solid border-2 border-transparent hover:bg-transparent hover:text-primary hover:border-primary">
+                  <DateSelect />
+                  <TimeSelect />
+                  <button className=" bg-primary px-3 text-gray-200 w-full rounded-md py-2 rounded-m border-solid border-2 border-transparent hover:bg-transparent dark:hover:bg-gray-200 hover:scale-95 transition-all duration-200 delay-100 ease-in-out hover:text-primary hover:border-primary">
                     Book Now
                   </button>
                 </div>

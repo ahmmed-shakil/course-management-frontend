@@ -14,12 +14,15 @@ const Ourcourses = () => {
         <h5 className=" text-3xl font-semibold">Our Courses</h5>
         <Line prop={"mb-16"} />
         <div className=" grid grid-cols-1 md:grid-cols-4 gap-5">
-          <div className="rounded-md shadow-md hover:shadow-2xl">
+          <div
+            className="rounded-md shadow-md hover:shadow-2xl cursor-pointer"
+            onClick={() => navigate(`/course-details/1`)}
+          >
             <div className=" h-56 w-full rounded-md">
               <img
                 src={Courseimg}
                 alt="img"
-                className=" rounded-tl-md rounded-tr-md h-full w-full"
+                className=" rounded-tl-md rounded-tr-md h-full w-full  transition-all delay-200 duration-200 ease-in-out"
               />
             </div>
             <div className=" space-y-4 px-4 py-3">

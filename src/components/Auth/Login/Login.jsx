@@ -3,6 +3,7 @@ import { Layout } from "../../shared/Layout/Layout";
 import loginImg from "../../../images/login.png";
 import Input from "../../shared/Input/Input";
 import FullPrimaryButton from "../../Buttons/FullPrimaryButton";
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -28,6 +29,10 @@ const Login = () => {
               </p>
             </div>
             <FullPrimaryButton text={"Log in"} />
+            <p className=" text-center">
+              Do you have an account?{" "}
+              <NavLink className="text-primary underline">Register now</NavLink>
+            </p>
           </div>
         </div>
       </Layout>
