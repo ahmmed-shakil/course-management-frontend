@@ -1,26 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors:{
-        primary:"var(--primary)",
-        secondary:"var(--secondary)",
-        third:"var(--third)",
-        last:"var(--last)",
+      colors: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        third: "var(--third)",
+        last: "var(--last)",
       },
-      gridTemplateColumns:{
+      gridTemplateColumns: {
         header: "1fr 2fr",
-        sixtyForty:"2fr 1fr"
+        sixtyForty: "2fr 1fr",
+        admin: "1fr 4fr",
       },
-      backgroundImage:{
-        heroBg: "url(/src/images/hero-bg.webp)"
+      backgroundImage: {
+        heroBg: "url(/src/images/hero-bg.webp)",
       },
     },
   },
-  darkMode: 'class',
+  darkMode: "class",
   plugins: [],
-}
-
+};

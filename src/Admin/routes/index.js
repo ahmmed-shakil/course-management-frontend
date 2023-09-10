@@ -1,13 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../components/Home/components/Home";
-import DesktopFooter from "../components/DesktopFooter";
-import TaskManager from "../components/TaskManager/TaskManager";
-import AllCourses from "../components/AllCourses/AllCourses";
-import Login from "../components/Auth/Login/Login";
-import CourseDetails from "../components/Courses/CourseDetails";
-import Admin from "../Admin";
+import Home from "../../components/Home/components/Home";
+import TaskManager from "../../components/TaskManager/TaskManager";
+import AllCourses from "../../components/AllCourses/AllCourses";
+import CourseDetails from "../../components/Courses/CourseDetails";
+import Login from "../../components/Auth/Login/Login";
 
-export const pages = [
+export const adminPages = [
   {
     path: "/",
     exact: true,
@@ -48,29 +46,20 @@ export const pages = [
     value: "Login",
     show: false,
   },
-  {
-    path: "/admin-portal",
-    exact: true,
-    component: Admin,
-    key: "admin-portal",
-    value: "Admin",
-    show: false,
-  },
 ];
 
-const MyRoutes = () => {
+const AdminRoutes = () => {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/admin">
       <Routes>
-        {pages.map(({ component, path }) => {
+        {adminPages.map(({ component, path }) => {
           const Component = component;
           return <Route key={path} element={<Component />} path={path} />;
         })}
         {/* <Route element={<Page404 />} /> */}
       </Routes>
-      <DesktopFooter />
     </BrowserRouter>
   );
 };
 
-export default MyRoutes;
+export default AdminRoutes;

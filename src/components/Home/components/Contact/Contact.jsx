@@ -1,8 +1,8 @@
 import React from "react";
 import { Layout } from "../../../shared/Layout/Layout";
 import PhoneInputComponent from "../../../shared/Input/PhoneInputComponent";
-import DateSelect from "../DateSelect/DateSelect";
-import TimeSelect from "../../../TimeSelect/TimeSelect";
+import DateSelect from "../../../shared/DateSelect/DateSelect";
+import TimeSelect from "../../../shared/TimeSelect/TimeSelect";
 
 const Contact = () => {
   return (

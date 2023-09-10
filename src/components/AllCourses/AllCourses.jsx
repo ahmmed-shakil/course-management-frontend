@@ -1,7 +1,12 @@
 import React from "react";
+import DesktopHeader from "../shared/DesktopHeader";
 
 const AllCourses = () => {
-  return <div>AllCourses</div>;
+  return (
+    <div>
+      <DesktopHeader />
+    </div>
+  );
 };
 
 export default AllCourses;

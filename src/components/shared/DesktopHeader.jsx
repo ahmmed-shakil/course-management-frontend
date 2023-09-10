@@ -6,7 +6,6 @@ import { Layout } from "./Layout/Layout";
 
 const DesktopHeader = () => {
   const { pathname } = useLocation();
-  console.log("location", pathname);
   return (
     <div
       className="sticky bg-gray-200 dark:bg-gray-800 top-0 shadow"
@@ -43,6 +42,14 @@ const DesktopHeader = () => {
               }`}
             >
               Login
+            </NavLink>
+            <NavLink
+              to={"/admin-portal"}
+              className={`border-solid border-2 border-gray-800 hover:bg-gray-800 hover:text-gray-200 transition-all duration-200 ease-in-out delay-150 py-2 px-3 h-10 rounded-lg hover:border-transparent ${
+                pathname === "/admin-portal" && "bg-primary text-white"
+              }`}
+            >
+              Admin Portal
             </NavLink>
             <Switcher />
           </div>

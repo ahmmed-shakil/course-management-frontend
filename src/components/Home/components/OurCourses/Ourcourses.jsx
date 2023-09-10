@@ -1,10 +1,10 @@
 import React from "react";
+import Courseimg from "../../../../images/hero-bg.webp";
+import { useNavigate } from "react-router-dom";
 import { Layout } from "../../../shared/Layout/Layout";
 import Line from "../../../shared/Line";
-import Courseimg from "../../../../images/hero-bg.webp";
 import Badge from "../../../shared/Badge/Badge";
 import ButtonPrimary from "../../../Buttons/ButtonPrimary";
-import { useNavigate } from "react-router-dom";
 
 const Ourcourses = () => {
   const navigate = useNavigate();
